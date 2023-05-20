@@ -48,7 +48,7 @@ function App(){
                } */}
 
                <Card2 />
-               <Card2 name="Md Raihan Hossin Raju" />
+               {/* <Card2 name="Md Raihan Hossin Raju" /> */}
         </div>
 }
 
