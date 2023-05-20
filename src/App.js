@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./componant/Card";
 import Data from "./data.json"
+import Card2 from "./componant/Card2";
 
 function App(){
 
@@ -32,7 +33,7 @@ function App(){
     return <div>
                {/* <h1 className="headingStyle">Todo App</h1>
                {Data.map((item, index)=> <Card key={index} todoTitle = {item.title} description = {item.desc} />)} */}
-               <h1>Nested Lists</h1>
+               {/* <h1>Nested Lists</h1>
                {
                 users.map((user, index)=> <article key={index}>
                         <h3>Full Name : {user.fullName}</h3>
@@ -44,7 +45,10 @@ function App(){
                                 </div>)
                         }
                 </article>)
-               }
+               } */}
+
+               <Card2 />
+               <Card2 name="Md Raihan Hossin Raju" />
         </div>
 }
 
