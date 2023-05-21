@@ -3,6 +3,7 @@ import Card from "./componant/Card";
 import Data from "./data.json"
 import Card2 from "./componant/Card2";
 import ReactBootstrap from "./React_Bootstrap/ReactBootstrap";
+import STATE from "./STATE";
 
 function App(){
 
@@ -50,7 +51,8 @@ function App(){
 
                {/* <Card2 /> */}
                {/* <Card2 name="Md Raihan Hossin Raju" /> */}
-               <ReactBootstrap />
+               {/* <ReactBootstrap /> */}
+              <STATE />
         </div>
 }
 
