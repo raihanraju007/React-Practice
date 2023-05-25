@@ -7,12 +7,14 @@ import STATE from "./STATE";
 import ConditionalRendering from "./CONDITIONAL_RENDERING/ConditionalRendering";
 import EventHandlerClass from "./event_handler_class/index";
 import EvenBinding from "./even_binding/EvenBinding";
-
+import ClassCompIndex from "./Hooks_UseState/ClassCompIndex";
+import FuncCompIndex from "./Hooks_UseState/FuncCompIndex";
 
 
 function App(){
     return <div>
-             <EvenBinding />
+          {/* <ClassCompIndex /> */}
+          <FuncCompIndex />
         </div>
 }
 export default App;
