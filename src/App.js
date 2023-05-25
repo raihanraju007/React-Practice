@@ -6,12 +6,13 @@ import ReactBootstrap from "./React_Bootstrap/ReactBootstrap";
 import STATE from "./STATE";
 import ConditionalRendering from "./CONDITIONAL_RENDERING/ConditionalRendering";
 import EventHandlerClass from "./event_handler_class/index";
+import EvenBinding from "./even_binding/EvenBinding";
 
 
 
 function App(){
     return <div>
-             <EventHandlerClass/>
+             <EvenBinding />
         </div>
 }
 export default App;
