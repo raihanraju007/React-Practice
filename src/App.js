@@ -9,12 +9,14 @@ import EventHandlerClass from "./event_handler_class/index";
 import EvenBinding from "./even_binding/EvenBinding";
 import ClassCompIndex from "./Hooks_UseState/ClassCompIndex";
 import FuncCompIndex from "./Hooks_UseState/FuncCompIndex";
+import UpdateFunComponent from "./Hooks_UseState/UpdateFunComponent";
 
 
 function App(){
     return <div>
           {/* <ClassCompIndex /> */}
-          <FuncCompIndex />
+          {/* <FuncCompIndex /> */}
+          <UpdateFunComponent />
         </div>
 }
 export default App;
