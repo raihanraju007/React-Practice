@@ -11,11 +11,16 @@ import ClassCompIndex from "./Hooks_UseState/ClassCompIndex";
 import FuncCompIndex from "./Hooks_UseState/FuncCompIndex";
 import UpdateFunComponent from "./Hooks_UseState/UpdateFunComponent";
 import Form from "./componant/Form/Form";
+import Child from "./componant/SATET_LIFTING/Child";
 
 
 function App(){
+    const data = "I am from parent (app)"
+    const handleChildData = (childData) => {
+        console.log("App "+childData);
+    }
     return <div>
-            <Form />
+          <Child data={data} onChildData={handleChildData}/>
         </div>
 }
 export default App;
