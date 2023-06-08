@@ -12,15 +12,12 @@ import FuncCompIndex from "./Hooks_UseState/FuncCompIndex";
 import UpdateFunComponent from "./Hooks_UseState/UpdateFunComponent";
 import Form from "./componant/Form/Form";
 import Child from "./componant/SATET_LIFTING/Child";
+import Signup from "./componant/Signup";
 
 
 function App(){
-    const data = "I am from parent (app)"
-    const handleChildData = (childData) => {
-        console.log("App "+childData);
-    }
     return <div>
-          <Child data={data} onChildData={handleChildData}/>
+         <Signup />
         </div>
 }
 export default App;
