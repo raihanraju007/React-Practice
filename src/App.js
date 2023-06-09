@@ -13,11 +13,12 @@ import UpdateFunComponent from "./Hooks_UseState/UpdateFunComponent";
 import Form from "./componant/Form/Form";
 import Child from "./componant/SATET_LIFTING/Child";
 import Signup from "./componant/Signup";
+import Toggle from "./componant/Toggle/Toggle";
 
 
 function App(){
     return <div>
-         <Signup />
+            <Toggle />
         </div>
 }
 export default App;
