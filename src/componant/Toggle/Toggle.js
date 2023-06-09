@@ -15,7 +15,6 @@ function Toggle() {
         <button onClick={()=>{setToggle(!Toggle)}}>{Toggle ? "Hide" : "Show"}</button>
         </div>
     </div>
-    
   )
 }
 

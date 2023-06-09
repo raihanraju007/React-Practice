@@ -14,11 +14,12 @@ import Form from "./componant/Form/Form";
 import Child from "./componant/SATET_LIFTING/Child";
 import Signup from "./componant/Signup";
 import Toggle from "./componant/Toggle/Toggle";
+import FAQS from "./componant/FAQ/FAQS";
 
 
 function App(){
     return <div>
-            <Toggle />
+            <FAQS />
         </div>
 }
 export default App;
