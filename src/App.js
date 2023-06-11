@@ -16,7 +16,7 @@ import Signup from "./componant/Signup";
 import Toggle from "./componant/Toggle/Toggle";
 import FAQS from "./componant/FAQ/FAQS";
 // import UseEffectExample from "./componant/HOOKS/useEffect/UseEffectExample";
-import DataFetch from "./componant/HOOKS/useEffect/DataFetch";
+import DataFetch from "./componant/HOOKS/CustomHooks/DataFetch";
 
 
 function App() {
