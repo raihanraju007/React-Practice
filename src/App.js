@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./componant/Card";
 import Data from "./data.json";
 import Card2 from "./componant/Card2";
@@ -17,12 +17,32 @@ import Toggle from "./componant/Toggle/Toggle";
 import FAQS from "./componant/FAQ/FAQS";
 // import UseEffectExample from "./componant/HOOKS/useEffect/UseEffectExample";
 import DataFetch from "./componant/HOOKS/CustomHooks/DataFetch";
+import { useEffect } from "react";
+import { First } from "react-bootstrap/esm/PageItem";
 
 
 function App() {
+  const [name, setName] = useState("");
+  const [validInput, setValidInput] = useState(false);
+
+  useEffect(() => {
+    if(name.length < 2){
+      setValidInput(false);
+    }else{
+      setValidInput(true);
+    }
+  }, [name])
+
+  const handleChange = (e) => {
+    setName(e.target.value)
+  }
   return (
     <div>
-        <DataFetch />
+      <input type="text" 
+      value={name} 
+      onChange={handleChange}
+      style={{ backgroundColor: validInput ? "Green" : "red" }}
+      />
     </div>
   );
 }
