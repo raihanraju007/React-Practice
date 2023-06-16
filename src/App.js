@@ -20,13 +20,14 @@ import DataFetch from "./componant/HOOKS/CustomHooks/DataFetch";
 import { useEffect } from "react";
 import { First } from "react-bootstrap/esm/PageItem";
 import Table from "./componant/Table/Table";
+import Users from "./componant/PropTypes/Users";
 
 
 function App() {
-  const [name, setName] = useState("");
+
   return (
     <div>
-        <Table />
+      <Users />
     </div>
   );
 }
