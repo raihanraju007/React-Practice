@@ -24,15 +24,16 @@ import Users from "./componant/PropTypes/Users";
 import LifeCycle from "./componant/LifeCycle/LifeCycle";
 // import UserForm from "./componant/RefExample/UserForm";
 import UserForm from "./componant/HOOKS/UseRefExample/UserForm";
+import UseReducer from "./componant/HOOKS/UseReducer";
 
 
 
 function App() {
 
   return (
-    <div>
-      <UserForm />
-    </div>
+    <>
+      <UseReducer/>
+    </>
   );
 }
 
