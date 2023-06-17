@@ -21,13 +21,14 @@ import { useEffect } from "react";
 import { First } from "react-bootstrap/esm/PageItem";
 import Table from "./componant/Table/Table";
 import Users from "./componant/PropTypes/Users";
+import LifeCycle from "./componant/LifeCycle/LifeCycle";
 
 
 function App() {
 
   return (
     <div>
-      <Users />
+      <LifeCycle />
     </div>
   );
 }
