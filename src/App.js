@@ -25,15 +25,16 @@ import LifeCycle from "./componant/LifeCycle/LifeCycle";
 // import UserForm from "./componant/RefExample/UserForm";
 import UserForm from "./componant/HOOKS/UseRefExample/UserForm";
 import UseReducer from "./componant/HOOKS/UseReducer";
+import Component1 from "./componant/PROP_DRILLING/Component1";
 
 
 
 function App() {
 
   return (
-    <>
-      <UseReducer/>
-    </>
+    <div>
+      <Component1 />
+    </div>
   );
 }
 
