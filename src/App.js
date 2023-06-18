@@ -20,20 +20,25 @@ import DataFetch from "./componant/HOOKS/CustomHooks/DataFetch";
 import { useEffect } from "react";
 import { First } from "react-bootstrap/esm/PageItem";
 import Table from "./componant/Table/Table";
-import Users from "./componant/PropTypes/Users";
+// import Users from "./componant/PropTypes/Users";
 import LifeCycle from "./componant/LifeCycle/LifeCycle";
 // import UserForm from "./componant/RefExample/UserForm";
 import UserForm from "./componant/HOOKS/UseRefExample/UserForm";
 import UseReducer from "./componant/HOOKS/UseReducer";
 import Component1 from "./componant/PROP_DRILLING/Component1";
+import Users from "./componant/user_management/Users";
 
 
 
 function App() {
+  const [users, setUsers] = useState([
+    {id: 1, username: "raihan"},
+    {id: 2, username: "raju"}
+  ])
 
   return (
     <div>
-      <Component1 />
+       <Users users = {users}/>
     </div>
   );
 }
