@@ -27,6 +27,8 @@ import UserForm from "./componant/HOOKS/UseRefExample/UserForm";
 import UseReducer from "./componant/HOOKS/UseReducer";
 import Component1 from "./componant/PROP_DRILLING/Component1";
 import Users from "./componant/user_management/Users";
+import NewUser from "./componant/user_management/NewUser";
+import { UsersContext } from "./componant/context/UsersContext";
 
 
 
@@ -36,10 +38,20 @@ function App() {
     {id: 2, username: "raju"}
   ])
 
+  const handleDeleteUser = (id) => {
+    const filteredUsers = users.filter((user) => user.id != id);
+    setUsers(filteredUsers);
+  }
+  const handleAddNewUser = (newUser) => {
+    setUsers((prevUsers) => [...prevUsers, newUser])
+  }
   return (
-    <div>
-       <Users users = {users}/>
-    </div>
+   <UsersContext.Provider value={{ users, setUsers }}>
+      <div>
+        <NewUser handleAddNewUser = {handleAddNewUser}/>
+        <Users handleDeleteUser={handleDeleteUser} />
+      </div>
+   </UsersContext.Provider>
   );
 }
 

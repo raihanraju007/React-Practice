@@ -1,11 +1,15 @@
 import React from 'react'
 
-const user = ({user}) => {
+const user = ({user, handleDeleteUser}) => {
   const {id, username} = user;
+  const handleDelete = (id) => {
+    handleDeleteUser(id);
+  }
     return (
-    <article>
+    <article className='user'>
         <h2>{id}</h2>
         <p>{username}</p>
+        <button onClick={() => {handleDelete(id)}}>Delete</button>
     </article>
   )
 }
