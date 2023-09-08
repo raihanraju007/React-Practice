@@ -44,3 +44,21 @@
     background-color: antiquewhite;
     padding: 0.rem;
 }
+
+nav{
+    height: 10vh;
+    background-color: rgb(216, 194, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    color: white;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: orange;
+}

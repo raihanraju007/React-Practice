@@ -34,6 +34,7 @@ import Home from "./Pages/Home";
 import Blogs from "./Pages/Blogs";
 import Contact from "./Pages/Contact";
 import Error from "./Pages/Error";
+import Navbar from "./Pages/Navbar";
 
 
 
@@ -44,8 +45,9 @@ function App() {
     //   <h1>Welcome</h1>
     // </div>
     <BrowserRouter> 
+     <Navbar />
       <Routes>
-        <Route path="/home" element={ <Home/> } />
+        <Route path="/" element={ <Home/> } />
         <Route path="/blogs" element={ <Blogs/> } />
         <Route path="/contract" element={ <Contact/> } />
         <Route path="*" element={ <Error/> } />
