@@ -29,29 +29,28 @@ import Component1 from "./componant/PROP_DRILLING/Component1";
 import Users from "./componant/user_management/Users";
 import NewUser from "./componant/user_management/NewUser";
 import { UsersContext } from "./componant/context/UsersContext";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import Blogs from "./Pages/Blogs";
+import Contact from "./Pages/Contact";
+import Error from "./Pages/Error";
 
 
 
 function App() {
-  const [users, setUsers] = useState([
-    {id: 1, username: "raihan"},
-    {id: 2, username: "raju"}
-  ])
 
-  const handleDeleteUser = (id) => {
-    const filteredUsers = users.filter((user) => user.id != id);
-    setUsers(filteredUsers);
-  }
-  const handleAddNewUser = (newUser) => {
-    setUsers((prevUsers) => [...prevUsers, newUser])
-  }
   return (
-   <UsersContext.Provider value={{ users, setUsers }}>
-      <div>
-        <NewUser handleAddNewUser = {handleAddNewUser}/>
-        <Users handleDeleteUser={handleDeleteUser} />
-      </div>
-   </UsersContext.Provider>
+    // <div className="App">
+    //   <h1>Welcome</h1>
+    // </div>
+    <BrowserRouter> 
+      <Routes>
+        <Route path="/home" element={ <Home/> } />
+        <Route path="/blogs" element={ <Blogs/> } />
+        <Route path="/contract" element={ <Contact/> } />
+        <Route path="*" element={ <Error/> } />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
